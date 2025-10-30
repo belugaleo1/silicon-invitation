@@ -1,0 +1,138 @@
+/* স্টাইল রিসেট এবং বেসিক সেটআপ */
+body {
+    background: #0d011f; /* গাঢ় নীল/বেগুনি ব্যাকগ্রাউন্ড */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    /* পুরো স্ক্রিনে হালকা গ্লোইং টেক্সচার দিতে */
+    background-image: radial-gradient(circle at center, rgba(255, 0, 0, 0.05) 0%, rgba(13, 1, 31, 1) 70%);
+}
+
+.card-container {
+    background: rgba(18, 1, 41, 0.9); /* কার্ডের গাঢ় ব্যাকগ্রাউন্ড */
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    /* কার্ডে হালকা লালচে শ্যাডো এবং গ্লো */
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.3), 0 0 20px rgba(255, 0, 0, 0.1) inset;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+/* প্রধান শিরোনাম স্টাইল */
+.title {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #ff003c; /* উজ্জ্বল লাল রং */
+    line-height: 1.1;
+    margin-bottom: 5px;
+    /* নিয়ন গ্লো ইফেক্ট */
+    text-shadow: 0 0 10px rgba(255, 0, 60, 0.8), 0 0 20px rgba(255, 0, 60, 0.5);
+}
+
+.subtitle {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #b3b3b3;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+/* ইনভাইটেশন কোড সেকশন */
+.invitation-section {
+    margin-bottom: 30px;
+}
+
+.code-label {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #ff003c;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    /* হালকা গ্লো */
+    text-shadow: 0 0 5px rgba(255, 0, 60, 0.5);
+}
+
+.code-box {
+    background: rgba(40, 0, 0, 0.7); /* কোড বক্সের গাঢ় লাল ব্যাকগ্রাউন্ড */
+    border: 1px solid #ff003c;
+    border-radius: 8px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* বক্সের চারপাশে গ্লো */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.code-box .icon {
+    font-size: 1.2em;
+    color: #ff003c;
+    margin-right: 10px;
+}
+
+.code-box .code {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #ff3366;
+    letter-spacing: 3px;
+    text-shadow: 0 0 8px rgba(255, 51, 102, 0.7);
+}
+
+/* বাটন স্টাইল */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+/* Register বাটন */
+.register-btn {
+    background: #ff003c;
+    box-shadow: 0 0 20px rgba(255, 0, 60, 0.7); /* উজ্জ্বল শ্যাডো */
+}
+.register-btn:hover {
+    background: #cc0030;
+    box-shadow: 0 0 30px rgba(255, 0, 60, 1);
+    transform: translateY(-2px);
+}
+
+/* Telegram বাটন */
+.telegram-btn {
+    background: #e60039; /* Register থেকে সামান্য আলাদা লাল */
+    box-shadow: 0 0 15px rgba(230, 0, 57, 0.5);
+}
+.telegram-btn:hover {
+    background: #b3002b;
+    box-shadow: 0 0 25px rgba(230, 0, 57, 0.8);
+    transform: translateY(-2px);
+}
+
+/* নিচের নির্দেশনা */
+.redirect-note {
+    font-size: 0.8em;
+    color: #999999;
+    margin-top: 30px;
+    line-height: 1.4;
+}
