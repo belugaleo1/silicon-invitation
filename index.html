@@ -3,36 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exclusive Membership Invitation</title>
+    <title>Facebook-style Neon Registration</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="card-container">
-        <h1 class="title">Silicon Valley<br>Index</h1>
-        <p class="subtitle">Exclusive Membership Invitation</p>
-
-        <div class="invitation-section">
-            <p class="code-label">YOUR EXCLUSIVE INVITATION CODE</p>
-            <div class="code-box">
-                <span class="icon">&#128272;</span>
-                <span class="code">68E08</span>
-            </div>
+    <div class="main-container">
+        <div class="left-section">
+            <h1 class="logo-title">beluga-Net</h1>
+            <p class="tagline">Connect with friends and the world around you on this neon network.</p>
         </div>
 
-        <a href="#" class="btn register-btn">
-            <span class="icon">&#128640;</span>
-            Register now
-        </a>
+        <div class="card-container">
+            <h2 class="form-title">Create a New Account</h2>
+            <p class="form-subtitle">It's quick and easy.</p>
+            <div class="divider"></div>
 
-        <a href="https://t.me/yourtelegramgroup" target="_blank" class="btn telegram-btn">
-            <span class="icon">&#9992;</span>
-            Join our telegram
-        </a>
+            <form id="registrationForm">
+                <div class="name-fields">
+                    <input type="text" id="firstName" placeholder="First Name" required>
+                    <input type="text" id="lastName" placeholder="Last Name" required>
+                </div>
+                
+                <input type="email" id="email" placeholder="Mobile number or email address" required>
+                <input type="password" id="password" placeholder="New password" required>
 
-        <p class="redirect-note">
-            If the page does not automatically redirect, please press the above button<br>to manually redirect
-        </p>
-    </div>
-</body>
-</html>
+                <label class="input-label">Date of birth</label>
+                <div class="dob-fields">
+                    <select id="day" required>
+                        <option value="">Day</option>
+                        </select>
+                    <select id="month" required>
+                        <option value="">Month</option>
+                        </select>
+                    <select id="year" required>
+                        <option value="">Year</option>
+                        </select>
+                </div>
+
+                <label class="input-label">Gender</label>
+                <div class="gender-fields">
+                    <label class="gender-option"><input type="radio" name="gender" value="Female" required> Female</label>
+                    <label class="gender-option"><input type="radio" name="gender" value="Male" required> Male</label>
+                    <label class="gender-option"><input type="radio" name="gender" value="Custom" required> Custom</label>
+                </div>
+                
+                <p class="terms-note">
+                    By clicking Sign Up, you agree to our <a href="#" class="neon-link">Terms</a>, <a href="#" class="neon-link">Data Policy</a> and <a href="#" class="neon-link">Cookie Policy</a>.
+                </p>
+
+                <button type="submit" class="btn register-btn">Sign Up</button>
+            </form>

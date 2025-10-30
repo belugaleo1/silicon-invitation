@@ -1,0 +1,93 @@
+/* স্টাইল রিসেট এবং বেসিক সেটআপ */
+body {
+    background: #0d011f; /* গাঢ় নীল/বেগুনি ব্যাকগ্রাউন্ড */
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    /* ডার্ক ব্যাকগ্রাউন্ডে হালকা গ্লো */
+    background-image: radial-gradient(circle at center, rgba(255, 0, 0, 0.05) 0%, rgba(13, 1, 31, 1) 70%);
+}
+
+.main-container {
+    display: flex;
+    max-width: 1050px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* বামদিকের ফেসবুক-স্টাইল লোগো সেকশন */
+.left-section {
+    max-width: 500px;
+    padding-right: 30px;
+}
+
+.logo-title {
+    font-size: 4em;
+    font-weight: 700;
+    color: #4267B2; /* ফেসবুক-এর মতো নীল রং */
+    margin-bottom: 0;
+    /* আপনার নিয়ন গ্লো এখানে যোগ করা হলো */
+    text-shadow: 0 0 10px rgba(66, 103, 178, 0.8), 0 0 20px rgba(66, 103, 178, 0.5);
+}
+
+.tagline {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #e4e6eb;
+    margin-top: 10px;
+}
+
+/* ডানদিকের কার্ড বা ফর্ম সেকশন */
+.card-container {
+    background: #18191a; /* ফেসবুক ডার্ক মোডের মতো গাঢ় ধূসর */
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.1); /* হালকা লালচে শ্যাডো */
+    width: 400px;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 1.8em;
+    color: #e4e6eb;
+    margin-bottom: 5px;
+}
+
+.form-subtitle {
+    font-size: 0.9em;
+    color: #b0b3b8;
+    margin-top: 0;
+}
+
+.divider {
+    border-bottom: 1px solid #3e4042;
+    margin: 15px 0;
+}
+
+/* ফর্ম ইনপুট স্টাইল */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #3e4042;
+    border-radius: 6px;
+    background: #242526; /* ইনপুটের গাঢ় ব্যাকগ্রাউন্ড */
+    color: #e4e6eb;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #ff003c; /* ফোকাসে নিয়ন লাল বর্ডার */
+    box-shadow: 0 0 5px rgba(255, 0, 60,
